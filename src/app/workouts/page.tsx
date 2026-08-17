@@ -1,7 +1,7 @@
 import { getWorkouts } from "@/lib/workouts";
 
-export default function WorkoutsPage() {
-  const workouts = getWorkouts();
+export default async function WorkoutsPage() {
+  const workouts = await getWorkouts();
 
   return (
     <div className="flex flex-col flex-1 items-center bg-zinc-50 font-sans dark:bg-black">
